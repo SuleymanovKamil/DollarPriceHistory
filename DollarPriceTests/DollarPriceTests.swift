@@ -22,7 +22,7 @@ class DollarPriceTests: XCTestCase {
 
     func testGetDollarPriceFromAPI() throws {
         vm.dollarPrice = String()
-        let expectedResult = false
+        let expectedResult = !vm.dollarPrice.isEmpty
         var validate: Bool?
         let expectation = expectation(description: #function)
         
