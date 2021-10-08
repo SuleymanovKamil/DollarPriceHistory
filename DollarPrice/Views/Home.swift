@@ -45,7 +45,9 @@ extension Home {
     
     private var showPriceButton: some View {
         Button(action: {
-            vm.getPrice()
+            vm.getPrice {
+                vm.getPriceAndSaveIt()
+            }
             vm.showPrice = true
             
         }, label: {

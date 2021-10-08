@@ -19,7 +19,7 @@ class ViewModel: NSObject, ObservableObject {
         return min...max
     }
  
-    func getPrice() {
+    func getPrice(completion: @escaping () -> ()) {
         let url = URL(string: "https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=\(dateFormatter.string(from: date))&date_req2=\(dateFormatter.string(from: date))&VAL_NM_RQ=R01235")!
         let request=URLRequest(url: url)
         
@@ -37,13 +37,8 @@ class ViewModel: NSObject, ObservableObject {
             parser.delegate = self
             parser.parse()
             
-            DispatchQueue.main.async { [self] in
-                if let price = prices["Value"] {
-                dollarPrice = price
-                    saveToCoreData()
-                 
-                }
-            }
+            completion ()
+            
         }
         task.resume()
     }
@@ -60,7 +55,15 @@ extension ViewModel: XMLParserDelegate {
 }
 
 extension ViewModel {
-    
+    func getPriceAndSaveIt(){
+        DispatchQueue.main.async { [self] in
+            if let price = prices["Value"] {
+            dollarPrice = price
+                saveToCoreData()
+             
+            }
+        }
+    }
 }
 
 

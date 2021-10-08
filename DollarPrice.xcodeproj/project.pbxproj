@@ -16,7 +16,18 @@
 		6B97F6F827104FFE00F8B141 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97F6F727104FFE00F8B141 /* ViewModel.swift */; };
 		6B97F6FA2710515B00F8B141 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97F6F92710515B00F8B141 /* Home.swift */; };
 		6B97F6FC27105A8C00F8B141 /* dollarPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97F6FB27105A8C00F8B141 /* dollarPriceView.swift */; };
+		6B97F70527105E1500F8B141 /* DollarPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97F70427105E1500F8B141 /* DollarPriceTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B97F70627105E1500F8B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B97F6AD270E222500F8B141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B97F6B4270E222500F8B141;
+			remoteInfo = DollarPrice;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6B97F6B5270E222500F8B141 /* DollarPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DollarPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,19 @@
 		6B97F6F727104FFE00F8B141 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6B97F6F92710515B00F8B141 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		6B97F6FB27105A8C00F8B141 /* dollarPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dollarPriceView.swift; sourceTree = "<group>"; };
+		6B97F70227105E1500F8B141 /* DollarPriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollarPriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B97F70427105E1500F8B141 /* DollarPriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarPriceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6B97F6B2270E222500F8B141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B97F6FF27105E1400F8B141 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				6B97F6B7270E222500F8B141 /* DollarPrice */,
+				6B97F70327105E1500F8B141 /* DollarPriceTests */,
 				6B97F6B6270E222500F8B141 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				6B97F6B5270E222500F8B141 /* DollarPrice.app */,
+				6B97F70227105E1500F8B141 /* DollarPriceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +114,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6B97F70327105E1500F8B141 /* DollarPriceTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B97F70427105E1500F8B141 /* DollarPriceTests.swift */,
+			);
+			path = DollarPriceTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +142,24 @@
 			productReference = 6B97F6B5270E222500F8B141 /* DollarPrice.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6B97F70127105E1400F8B141 /* DollarPriceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B97F70827105E1500F8B141 /* Build configuration list for PBXNativeTarget "DollarPriceTests" */;
+			buildPhases = (
+				6B97F6FE27105E1400F8B141 /* Sources */,
+				6B97F6FF27105E1400F8B141 /* Frameworks */,
+				6B97F70027105E1400F8B141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B97F70727105E1500F8B141 /* PBXTargetDependency */,
+			);
+			name = DollarPriceTests;
+			productName = DollarPriceTests;
+			productReference = 6B97F70227105E1500F8B141 /* DollarPriceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +172,10 @@
 				TargetAttributes = {
 					6B97F6B4270E222500F8B141 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					6B97F70127105E1400F8B141 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6B97F6B4270E222500F8B141;
 					};
 				};
 			};
@@ -141,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				6B97F6B4270E222500F8B141 /* DollarPrice */,
+				6B97F70127105E1400F8B141 /* DollarPriceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +205,13 @@
 			files = (
 				6B97F6C0270E222800F8B141 /* Preview Assets.xcassets in Resources */,
 				6B97F6BD270E222800F8B141 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B97F70027105E1400F8B141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +232,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6B97F6FE27105E1400F8B141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B97F70527105E1500F8B141 /* DollarPriceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B97F70727105E1500F8B141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B97F6B4270E222500F8B141 /* DollarPrice */;
+			targetProxy = 6B97F70627105E1500F8B141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6B97F6C6270E222800F8B141 /* Debug */ = {
@@ -353,6 +429,52 @@
 			};
 			name = Release;
 		};
+		6B97F70927105E1500F8B141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XWJ7U5B2BL;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krakatoor.dollarPrice.DollarPriceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DollarPrice.app/DollarPrice";
+			};
+			name = Debug;
+		};
+		6B97F70A27105E1500F8B141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XWJ7U5B2BL;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krakatoor.dollarPrice.DollarPriceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DollarPrice.app/DollarPrice";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,6 +492,15 @@
 			buildConfigurations = (
 				6B97F6C9270E222800F8B141 /* Debug */,
 				6B97F6CA270E222800F8B141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B97F70827105E1500F8B141 /* Build configuration list for PBXNativeTarget "DollarPriceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B97F70927105E1500F8B141 /* Debug */,
+				6B97F70A27105E1500F8B141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
